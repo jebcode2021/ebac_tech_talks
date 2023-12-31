@@ -7,6 +7,13 @@
     justify-content: space-between;
     border-radius: 20px;
 
+    &__h1 {
+        color: variables.$textColorBranco;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
     &__infos {
         display: flex;
         gap: 40px;
