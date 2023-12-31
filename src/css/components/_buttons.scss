@@ -7,10 +7,15 @@
     text-decoration: none;
     text-align: center;
     white-space: nowrap;
+    border-radius: 20px;
 
     &--primary {
         background-color: variables.$blue3;
         color: variables.$textColorBranco;
+
+        &:hover {
+            background-color: variables.$blue1;
+        }
     }
 
     @media (max-width: 640px) {

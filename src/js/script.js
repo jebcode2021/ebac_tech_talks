@@ -21,9 +21,12 @@ const contaAsHoras = setInterval(function () {
     const segundosAteOEvento = Math.floor((distanciaAteOEvento % minutoEmMs) / segundoEmMs);
 
     document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`;
+    document.getElementById('contador-button');
 
     if (distanciaAteOEvento < 0) {
         clearInterval(contaAsHoras);
         document.getElementById('contador').innerHTML = 'Evento expirado';
+        document.getElementById('contador-button').innerHTML = 'Vaga expirado';
+        document.getElementById('contador-button').style.cursor = 'not-allowed';
     }
 }, 1000);
